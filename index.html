@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TrivianEdge • Global Homebases</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Section Styles -->
+  <style>
+    :root {
+      --violet: #B067FF;
+      --glass-bg: rgba(24,10,50,0.6);
+      --glass-border: rgba(176,103,255,0.25);
+    }
+    *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+    body { background: #0a0a23; color: #fff; font-family: 'Sora', sans-serif; }
+    .container { max-width:1200px; margin:0 auto; padding:0 20px; }
+    h2 { font-size:3rem; color:var(--violet); text-align:center; margin-bottom:0.5rem; }
+    .intro { text-align:center; max-width:800px; margin:0 auto 2rem; line-height:1.6; }
+    .filter-buttons { display:flex; justify-content:center; gap:1rem; margin-bottom:3rem; }
+    .filter-buttons button {
+      background: var(--violet);
+      border: none;
+      border-radius: 8px;
+      padding: .75rem 1.5rem;
+      color: #fff;
+      cursor: pointer;
+      transition: transform .2s, box-shadow .2s;
+    }
+    .filter-buttons button.active,
+    .filter-buttons button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px var(--violet);
+    }
+    .region-title { font-size:1.75rem; color:var(--violet); text-align:center; margin:2rem 0 1rem; }
+    .cards-grid {
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:1.5rem;
+    }
+    @media(max-width:1024px) { .cards-grid { grid-template-columns:repeat(2,1fr); } }
+    @media(max-width:640px)  { .cards-grid { grid-template-columns:1fr; } }
+    .card {
+      background:var(--glass-bg);
+      border:2px solid var(--glass-border);
+      border-radius:16px;
+      backdrop-filter:blur(18px) saturate(120%);
+      -webkit-backdrop-filter:blur(18px) saturate(120%);
+      padding:1.5rem;
+      opacity:0;
+      transform:translateY(30px);
+    }
+    .card:hover {
+      transform:translateY(-4px) scale(1.02);
+      box-shadow:0 0 30px var(--violet);
+    }
+    .flag { font-size:2.5rem; text-align:center; margin-bottom:1rem; display:block; }
+    .card h4 { text-align:center; margin-bottom:0.75rem; font-size:1.25rem; }
+    .metrics { list-style:none; font-size:0.9rem; line-height:1.4; padding-left:0; margin-bottom:0.75rem; }
+    .metrics li { margin-bottom:0.25rem; }
+    .metrics strong { color:var(--violet); }
+    .card p { font-size:0.85rem; line-height:1.4; color:#ddd; margin-top:1rem; }
+  </style>
+</head>
+<body>
+
+  <section id="global-homebases" style="padding:80px 0; overflow:hidden; position:relative;">
+    <div class="container">
+      <h2>Global Homebases</h2>
+      <div class="intro">
+        We scale across continents to activate time zones, talent clusters, and transformation pipelines. From BPO to custom dev, each TrivianEdge node delivers cross-border impact, compliance-ready operations, and 24/7 business continuity—powered by multilingual teams and ultra-adaptive tech pods. Explore our offshoring locations designed to amplify speed, cost-efficiency, and nearshore precision.
+      </div>
+
+      <div class="filter-buttons">
+        <button data-region="All" class="active">🌐 All</button>
+        <button data-region="APAC">🌏 APAC</button>
+        <button data-region="Americas">🌎 Americas</button>
+        <button data-region="EMEA">🌍 EMEA</button>
+      </div>
+
+      <!-- APAC -->
+      <div class="region" data-region="APAC">
+        <div class="region-title">APAC</div>
+        <div class="cards-grid">
+          <div class="card">
+            <div class="flag">🇱🇰</div>
+            <h4>Sri Lanka</h4>
+            <ul class="metrics">
+              <li><strong>Talent:</strong> Software & BPO Specialists</li>
+              <li><strong>Literacy:</strong> 92%</li>
+              <li><strong>Internet:</strong> 25 Mbps avg.</li>
+              <li><strong>Timezone:</strong> UTC+5:30</li>
+            </ul>
+            <p>Strategic launchpad with robust English proficiency and 5G-ready urban centers.</p>
+          </div>
+          <div class="card">
+            <div class="flag">🇮🇳</div>
+            <h4>India</h4>
+            <ul class="metrics">
+              <li><strong>Talent:</strong> Engineering & DevOps</li>
+              <li><strong>Literacy:</strong> 74%</li>
+              <li><strong>Internet:</strong> 55 Mbps avg.</li>
+              <li><strong>Timezone:</strong> UTC+5:30</li>
+            </ul>
+            <p>Global engineering powerhouse with cost-competitive talent in major metros.</p>
+          </div>
+          <div class="card">
+            <div class="flag">🇻🇳</div>
+            <h4>Vietnam</h4>
+            <ul class="metrics">
+              <li><strong>Talent:</strong> Agile Developers</li>
+              <li><strong>Literacy:</strong> 95%</li>
+              <li><strong>Internet:</strong> 40 Mbps avg.</li>
+              <li><strong>Timezone:</strong> UTC+7</li>
+            </ul>
+            <p>Rapidly growing talent pool with strong STEM education focus.</p>
+          </div>
+          <div class="card">
+            <div class="flag">🇵🇭</div>
+            <h4>Philippines</h4>
+            <ul class="metrics">
+              <li><strong>Talent:</strong> BPO & CX Experts</li>
+              <li><strong>Literacy:</strong> 98%</li>
+              <li><strong>Internet:</strong> 23 Mbps avg.</li>
+              <li><strong>Timezone:</strong> UTC+8</li>
+            </ul>
+            <p>Cultural affinity with North America and strong customer-centric skillsets.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Americas -->
+      <div class="region" data-region="Americas">
+        <div class="region-title">Americas</div>
+        <div class="cards-grid">
+          <div class="card">
+            <div class="flag">🇺🇸</div>
+            <h4>United States</h4>
+            <ul class="metrics">
+              <li><strong>Talent:</strong> Enterprise Architects</li>
+              <li><strong>Literacy:</strong> 99%</li>
+              <li><strong>Internet:</strong> 120 Mbps avg.</li>
+              <li><strong>Timezone:</strong> UTC−5 to −8</li>
+            </ul>
+            <p>Nearshore partnership opportunities with ISO/PCI-ready infrastructure.</p>
+          </div>
+          <div class="card">
+            <div class="flag">🇨🇦</div>
+            <h4>Canada</h4>
+            <ul class="metrics">
+              <li><strong>Talent:</strong> Bilingual Dev & Ops</li>
+              <li><strong>Literacy:</strong> 99%</li>
+              <li><strong>Internet:</strong> 110 Mbps avg.</li>
+              <li><strong>Timezone:</strong> UTC−3.5 to −8</li>
+            </ul>
+            <p>Compliance hubs with bilingual teams and strong tech infrastructure.</p>
+          </div>
+          <div class="card">
+            <div class="flag">🇧🇷</div>
+            <h4>Brazil</h4>
+            <ul class="metrics">
+              <li><strong>Talent:</strong> Full-Stack Devs</li>
+              <li><strong>Literacy:</strong> 93%</li>
+              <li><strong>Internet:</strong> 31 Mbps avg.</li>
+              <li><strong>Timezone:</strong> UTC−2 to −5</li>
+            </ul>
+            <p>LatAm growth engine with strong government incentives for tech.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- EMEA -->
+      <div class="region" data-region="EMEA">
+        <div class="region-title">EMEA</div>
+        <div class="cards-grid">
+          <div class="card">
+            <div class="flag">🇹🇷</div>
+            <h4>Turkey</h4>
+            <ul class="metrics">
+              <li><strong>Talent:</strong> Compliance & DevOps</li>
+              <li><strong>Literacy:</strong> 96%</li>
+              <li><strong>Internet:</strong> 45 Mbps avg.</li>
+              <li><strong>Timezone:</strong> UTC+3</li>
+            </ul>
+            <p>Strategic crossroads with ISO-certified data centers.</p>
+          </div>
+          <div class="card">
+            <div class="flag">🇿🇦</div>
+            <h4>South Africa</h4>
+            <ul class="metrics">
+              <li><strong>Talent:</strong> BPO & IT Support</li>
+              <li><strong>Literacy:</strong> 94%</li>
+              <li><strong>Internet:</strong> 20 Mbps avg.</li>
+              <li><strong>Timezone:</strong> UTC+2</li>
+            </ul>
+            <p>Cost-efficient BPO hub with strong English proficiency.</p>
+          </div>
+          <div class="card">
+            <div class="flag">🌍</div>
+            <h4>Pan-Africa</h4>
+            <ul class="metrics">
+              <li><strong>Talent:</strong> Emerging Tech Hubs</li>
+              <li><strong>Literacy:</strong> 67%</li>
+              <li><strong>Internet:</strong> 15 Mbps avg.</li>
+              <li><strong>Timezone:</strong: UTC+0 to +4</li>
+            </ul>
+            <p>Rapidly developing ecosystems with high growth potential.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GSAP & ScrollTrigger -->
+    <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script>
+      gsap.registerPlugin(ScrollTrigger);
+
+      // Fade-up cards
+      gsap.utils.toArray('.card').forEach(card => {
+        gsap.from(card, {
+          scrollTrigger: { trigger: card, start: 'top 85%' },
+          opacity: 0,
+          y: 30,
+          duration: 0.6
+        });
+      });
+
+      // Filter functionality
+      const buttons = document.querySelectorAll('.filter-buttons button');
+      const regions = document.querySelectorAll('.region');
+      buttons.forEach((btn, i) => {
+        if (i === 0) btn.classList.add('active');
+        btn.addEventListener('click', () => {
+          buttons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          regions.forEach(r => {
+            r.style.display = (btn.dataset.region === 'All' || r.dataset.region === btn.dataset.region)
+              ? 'block'
+              : 'none';
+          });
+        });
+      });
+    </script>
+  </section>
+
+</body>
+</html>
+Add Global Homebases page
